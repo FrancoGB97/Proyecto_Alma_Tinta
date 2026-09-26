@@ -4,19 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alma de Tinta | Inicio</title>
+
+    <!-- Fuentes de Google Fonts necesarias para el CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header class="main-header">
-        <div class="container">
-            <a href="index.html" class="logo">Alma de Tinta</a>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" class="active">Inicio</a></li>
-                    <li><a href="desarrollo.html">Desarrollo Personal</a></li>
-                    <li><a href="novelas.html">Novelas</a></li>
-                </ul>
+    <header class="header">
+        <div class="container navbar">
+            <a href="index.html" class="logo">Alma de <span>Tinta</span></a>
+            <nav>
+                <a href="index.html" class="active">Inicio</a>
+                <a href="desarrollo.html">Desarrollo Personal</a>
+                <a href="novelas.html">Novelas</a>
             </nav>
         </div>
     </header>
@@ -214,9 +218,10 @@
         </section>
     </main>
 
-    <footer class="main-footer">
+    <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Alma de Tinta. Todos los derechos reservados.</p>
+            <p class="footer-logo">Alma de Tinta</p>
+            <p class="copyright">&copy; 2026 Alma de Tinta. Todos los derechos reservados.</p>
         </div>
     </footer>
 
