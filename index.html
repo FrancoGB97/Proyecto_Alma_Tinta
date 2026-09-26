@@ -38,6 +38,7 @@
             </div>
         </section>
 
+        <!-- SECCIÓN DE 10 LIBROS DE SELECCIÓN -->
         <section class="section">
             <div class="container">
                 <div class="section-heading">
@@ -70,7 +71,7 @@
 
                     <article class="book-card">
                         <div class="book-cover">
-                            <img src="img/portadas/7-habitos.jpg" alt="Los 7 hábitos de la gente altamente efectiva" onerror="this.src='https://placehold.co/400x600/1B2430/D4AF37?text=Portada';">
+                            <img src="img/portadas/7-habitos.jpg" alt="Los 7 hábitos de la gente highly efectiva" onerror="this.src='https://placehold.co/400x600/1B2430/D4AF37?text=Portada';">
                         </div>
                         <div class="book-info">
                             <h3>Los 7 hábitos de la gente altamente efectiva</h3>
@@ -166,18 +167,19 @@
                         <span class="discover-number">01</span>
                         <h2>Conocé tu próximo libro para ser mejor</h2>
                         <p>Descubrí libros sobre hábitos, propósito, productividad y crecimiento personal.</p>
-                        <span class="discover-link">Explorar libros →</span>
+                        <span class="discover-link">Explorar libros &rarr;</span>
                     </a>
                     <a href="novelas.html" class="discover-card">
                         <span class="discover-number">02</span>
                         <h2>Conocé títulos que te lleven a una nueva aventura</h2>
                         <p>Misterio, fantasía, ciencia ficción, terror y grandes clásicos.</p>
-                        <span class="discover-link">Explorar novelas →</span>
+                        <span class="discover-link">Explorar novelas &rarr;</span>
                     </a>
                 </div>
             </div>
         </section>
 
+        <!-- FORMULARIO DE COMENTARIOS -->
         <section class="comments-section">
             <div class="container narrow">
                 <div class="section-heading">
@@ -185,7 +187,7 @@
                     <h2>¿Qué libro dejó una huella en vos?</h2>
                     <p>Compartí una reflexión y, si querés, agregá una imagen relacionada con tu lectura.</p>
                 </div>
-                <form action="#" method="POST" class="comment-form">
+                <form class="comment-form" id="commentForm">
                     <div class="form-group">
                         <label for="nombre">Tu nombre</label>
                         <input type="text" id="nombre" name="nombre" maxlength="50" required placeholder="Escribí tu nombre">
@@ -205,14 +207,17 @@
             </div>
         </section>
 
+        <!-- CONTENEDOR DE REFLEXIONES PUBLICADAS -->
         <section class="published-comments">
             <div class="container">
                 <div class="section-heading">
                     <span class="eyebrow">VOCES DE LA COMUNIDAD</span>
                     <h2>Reflexiones de lectores</h2>
                 </div>
-                <div class="empty-comments">
-                    Todavía no hay reflexiones. Sé el primero en compartir una.
+                <div class="comments-grid" id="commentsGrid">
+                    <div class="empty-comments" id="emptyComments">
+                        Todavía no hay reflexiones. Sé el primero en compartir una.
+                    </div>
                 </div>
             </div>
         </section>
@@ -225,5 +230,7 @@
         </div>
     </footer>
 
+    <!-- VINCULACIÓN CON EL SCRIPT -->
+    <script src="js/comentarios.js"></script>
 </body>
 </html>
